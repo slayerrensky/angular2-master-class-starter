@@ -9,7 +9,7 @@ import {Contact} from '../models/contact';
 })
 export class ContactsListComponent implements OnInit {
 
-  contacts:Contact[];
+  contacts:Array<Contact>;
   constructor(private contactsService: ContactsService){
     
   }
