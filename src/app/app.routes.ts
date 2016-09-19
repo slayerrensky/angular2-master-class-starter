@@ -1,7 +1,7 @@
 import { ContactsListComponent } from './contacts-list'
+import { Routes } from '@angular/router'
 
-
- export const ContactsAppRoutes = [
+ export const ContactsAppRoutes:Routes = [
     { path: '', component: ContactsListComponent }
  ] 
 

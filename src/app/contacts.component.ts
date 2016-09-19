@@ -10,6 +10,4 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactsAppComponent {
   
-
-  title = 'Angular 2 Master Class setup works!';
 }
