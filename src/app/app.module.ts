@@ -9,17 +9,20 @@ import { ContactsListComponent } from './contacts-list';
 import { ContactsDetailComponent } from './contacts-detail';
 import { HttpModule } from '@angular/http';
 import 'rxjs/add/operator/map';
+import { ContactsEditorComponent } from './contacts-editor/contacts-editor.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     ContactsAppComponent,
     ContactsHeaderComponent,
     ContactsListComponent,
-    ContactsDetailComponent ],
+    ContactsDetailComponent, ContactsEditorComponent ],
   imports: [
     BrowserModule, 
     RouterModule.forRoot(ContactsAppRoutes),
-    HttpModule],
+    HttpModule,
+    FormsModule],
   providers: [ContactsService],
   bootstrap: [ContactsAppComponent],
   
