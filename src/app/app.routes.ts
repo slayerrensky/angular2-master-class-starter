@@ -1,7 +1,8 @@
+import { Routes } from '@angular/router';
 import { ContactsListComponent } from './contacts-list';
 import { ContactsDetailComponent } from './contacts-detail';
 import { ContactsEditorComponent } from './contacts-editor';
-import { Routes } from '@angular/router';
+
 
  export const ContactsAppRoutes:Routes = [
     { path: '', component: ContactsListComponent },

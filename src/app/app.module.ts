@@ -23,7 +23,12 @@ import { FormsModule } from '@angular/forms';
     RouterModule.forRoot(ContactsAppRoutes),
     HttpModule,
     FormsModule],
-  providers: [ContactsService],
+  providers: [ContactsService,
+  {
+    provide: 'apiUrl',
+    useValue: 'http://localhost:4201/api'
+  }
+  ],
   bootstrap: [ContactsAppComponent],
   
 })

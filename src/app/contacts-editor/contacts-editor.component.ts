@@ -12,6 +12,7 @@ import { ContactsService } from '../contacts.service';
 })
 export class ContactsEditorComponent implements OnInit {
 
+  // we need to initialize sice we can´t ise ?. operator with ngModel
   contact:Contact = <Contact> {address:{}};
   id:number = null;
 
