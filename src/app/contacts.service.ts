@@ -33,4 +33,10 @@ export class ContactsService {
         .map(data => data.item);
            
    }
+
+   search(term: string) {
+     return this.http.get(`${this.apiUrl}/search?text=${term}`)
+        .map(res => res.json())
+        .map(data => data.items);
+   } 
 }

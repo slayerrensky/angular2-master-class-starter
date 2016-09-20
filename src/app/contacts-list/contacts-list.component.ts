@@ -21,4 +21,8 @@ export class ContactsListComponent implements OnInit {
     //  .subscribe(contacts => this.contacts = contacts);
   }
 
+  search(term:string) {
+    this.contacts = this.contactsService.search(term);
+  }
+  
 }
