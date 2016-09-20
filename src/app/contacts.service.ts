@@ -3,6 +3,8 @@ import { Http } from '@angular/http';
 import {CONTACT_DATA} from './data/contact-data';
 import {Contact} from './models/contact';
 import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/debounceTime';
+import 'rxjs/add/operator/distinctUntilChanged'
 
 
 @Injectable()
